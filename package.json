@@ -1,0 +1,22 @@
+{
+  "name": "hourly_agenda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lreyes4/hourly_agenda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lreyes4/hourly_agenda/issues"
+  },
+  "homepage": "https://github.com/Lreyes4/hourly_agenda#readme",
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
+}
