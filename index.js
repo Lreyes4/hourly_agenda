@@ -1,4 +1,3 @@
-
 var btns = $('.input-group-append');
 var times = $('.time');
 var textAreas = $('textarea');
@@ -14,17 +13,17 @@ btns.on('click', function (event) {
     const value = $(this).siblings('textarea').val()
     console.log($(this).siblings('.time').text())
     const key = $(this).siblings('.time').text()
-    localStorage.setItem(key,value)
-  });
-  const workday = [9,10,11,12,13,14,15,16,17]
+    localStorage.setItem(key, value)
+});
+const workday = [9, 10, 11, 12, 13, 14, 15, 16, 17]
 for (let i = 0; i < times.length; i++) {
     const element = times[i];
     console.log(element.textContent)
     const storage = localStorage.getItem(element.textContent)
-    if (storage){
+    if (storage) {
         textAreas[i].value = storage
-    
-    } 
+
+    }
     if (workday[i] === time) {
         element.classList.add('present')
         textAreas[i].classList.add('present')
@@ -36,5 +35,3 @@ for (let i = 0; i < times.length; i++) {
         textAreas[i].classList.add('future')
     }
 }
-
-
